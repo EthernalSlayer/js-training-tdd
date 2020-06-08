@@ -7,7 +7,15 @@
  */
 
 // Your code:
-
+function total (numberArray) {
+    let i = 0;
+    let result = 0;
+    while (i < numberArray.length) {
+        result += numberArray[i];
+        i++;
+    }
+    return result;
+}
 //* Begin of tests
 const assert = require('assert');
 
