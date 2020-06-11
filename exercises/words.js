@@ -7,7 +7,19 @@
  */
 
 // Your code:
-
+const words = (str) => {
+    let arr = [''];
+    let a = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === ' ') {
+            a++;
+            arr[a] = '';
+        } else {
+            arr[a] += str[i];
+        }
+    }
+    return arr;
+};
 //* Begin of tests
 const assert = require('assert');
 
