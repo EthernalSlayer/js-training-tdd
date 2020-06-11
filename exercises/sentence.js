@@ -7,7 +7,17 @@
  */
 
 // Your code:
-
+const sentence = (arr) => {
+    let str = '';
+    for (let item of arr) {
+        if (item === arr[arr.length - 1]){
+            str += item;
+        } else {
+            str += item + ' ';
+        }
+    }
+    return str;
+};
 //* Begin of tests
 const assert = require('assert');
 
